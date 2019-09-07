@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>MeeTech</title>
+  <link rel="stylesheet" href="stylesheet.css">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="header">
+    <div class="header-logo" id="top-btn">
+      <h1><i class="fas fa-robot"></i>MeeTech</h1>
+    </div>
+
+    <div class="header-list">
+      <ul>
+        <li><div class="header-menu" id="about-btn"><a href="#about">ABOUT</a></div></li>
+        <li><div class="header-menu" id="merit-btn"><a href="#merit">MERIT</a></div></li>
+        <li><div class="header-menu" id="price-btn"><a href="#price">PRICE</a></div></li>
+        <li><div class="header-menu" id="faq-btn"><a href="#faq">FAQ</a></div></li>
+        <li><div class="header-menu" id="contact-btn"><a href="#contact">CONTACT</a></div></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="register-modal-wrapper">
+    <div class="modal">
+      <div class="close-modal">
+        <i class="fa fa-2x fa-times"></i>
+      </div>
+
+      <div id="register-form">
+        <h2>新規登録</h2>
+        <form method="post">
+          <input class="form-control" name="email" type="text" placeholder="メールアドレス"><br/>
+          <input class="form-control" name="pass" type="password" placeholder="パスワード"><br/>
+          <input class="form-control" name="pass_retype" type="password" placeholder="パスワード(再)"><br/>
+          <input type="submit" class="submit-btn" value="登録">
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="login-modal-wrapper">
+    <div class="modal">
+
+      <div class="close-modal">
+        <i class="fa fa-2x fa-times"></i>
+      </div>
+
+      <div id="login-form">
+        <h2>ログイン</h2>
+        <form action="#" method="post">
+          <input class="form-control" type="text" placeholder="メールアドレス">
+          <input class="form-control" type="password" placeholder="パスワード">
+          <input type="submit" class="submit-btn" value="ログイン" onclick="return check()">
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="top-wrapper">
+    <div class="contaner">
+      <h1>新しい人と出会う。新しい自分に出会える</h1>
+      <div class="contaner-btn">
+        <a href="#" class="btn new register-show" ><i class="fas fa-user-alt"></i>新規登録</a>
+        <a href="#" class="btn login login-show"><i class="fas fa-sign-in-alt"></i>ログイン</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="about">
+    <div id="about1">
+      <h1>MeeTechとは？</h1>
+      <h3>マッチング業界初の<span id="mark">ITエンジニア限定</span>のAIマッチングサービスです。</h3>
+
+      <ol class="msr_flow02">
+        <li> <i class="fas fa-sign-out-alt"></i>ユーザ登録</li>
+        <li> <i class="fas fa-id-badge"></i>情報入力</li>
+        <li> <i class="fab fa-android"></i><span class="AI">AIマッチング</span></li>
+        <li> <i class="fas fa-utensils"></i>詳細決定</li>
+        <li> <i class="fas fa-hand-holding-heart"></i>デート</li>
+      </ol>
+
+
+    </div>
+
+
+    <div id="about2">
+      <img src="img/photo10.png" alt="article" width="80%" height="80%" >
+    </div>
+  </div>
+
+  <div id="merit">
+    <h1>MERIT</h1>
+    <div class="parent-merit">
+      <div class="child-merit">
+        <div class="child-merit-up">
+          <h2>AI自動マッチング</h2>
+          <p class="first">あなたのプロフィールから、</p>
+          <p class="second">AIが相性の良いお相手を選びます。</p>
+        </div>
+        <div class="child-merit-low one"></div>
+      </div>
+
+
+      <div class="child-merit">
+        <div class="child-merit-up">
+          <h2>店予約不要</h2>
+          <p class="first">お会いするエリアと予算を指定すれば、</p>
+          <p class="second">条件に合ったお店を自動で予約します。</p>
+        </div>
+        <div class="child-merit-low two"></div>
+      </div>
+
+      <div class="child-merit">
+        <div class="child-merit-up">
+          <h2>サクラゼロ</h2>
+          <p class="first">厳重な入会審査を実施しており、</p>
+          <p class="second">会員の中にサクラは一人もいません。</p>
+        </div>
+        <div class="child-merit-low three"></div>
+      </div>
+
+      <div class="child-merit">
+        <div class="child-merit-up">
+          <h2>新たな人脈</h2>
+          <p class="first">もし恋愛に発展しなかった場合でも、</p>
+          <p class="second">「ITエンジニア」として新たな人脈となります。</p>
+        </div>
+        <div class="child-merit-low four"></div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div id="price">
+    <h1>PRICE</h1>
+    <table>
+      <tr>
+        <th><i class="fas fa-male"></i><span class="sex">Men</span></th>
+        <td>¥4,500 / 月</td>
+      </tr>
+      <tr>
+        <th><i class="fas fa-female"></i><span class="sex">Women</span></th>
+        <td>¥2,000 / 月</td>
+      </tr>
+    </table>
+  </div>
+
+  <div id="faq">
+    <div class="faq-wrapper">
+      <div class="container">
+        <div class="heading">
+          <h1>FAQ</h1>
+        </div>
+
+        <div class="faq">
+          <ul id="faq-list">
+            <li class="faq-list-item">
+              <h3 class="question">？？？？？？？？？？？？？？？？？</h3>
+              <span>+</span>
+              <div class="answer">
+                <p>AAAAAAAAAAAAAAAAAAAAAAAAAAAA</p>
+              </div>
+            </li>
+
+            <li class="faq-list-item">
+              <h3 class="question">？？？？？？？？？？？？？？？？？</h3>
+              <span>+</span>
+              <div class="answer">
+                <p>AAAAAAAAAAAAAAAAAAAAAAAAAAAA</p>
+              </div>
+            </li>
+
+            <li class="faq-list-item">
+              <h3 class="question">？？？？？？？？？？？？？？？？？</h3>
+              <span>+</span>
+              <div class="answer">
+                <p>AAAAAAAAAAAAAAAAAAAAAAAAAAAA</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="contact">
+    <h1>Contact</h1>
+    <p>※２営業日以内に返信致します。</p>
+    <form>
+      <div class="form">
+        <input type="text" placeholder="お名前" name="name" id="name"><br/>
+        <input type="text" placeholder="E-mail" name="email" id="email"><br/>
+        <input type="text" placeholder="会員番号" name="id" id="id"><br/>
+        <textarea cols="100" rows="10" placeholder="問い合わせ内容" name="comment"></textarea><br/>
+        <input type="submit" name="submit" value="送信" id="submit">
+      </div>
+    </form>
+  </div>
+
+  <div class="footer">
+
+    <div class="footer-logo">
+      <p><i class="fas fa-robot"></i>MeeTech</p>
+    </div>
+
+    <div class="footer-list">
+      <ul id="footer-ul">
+        <li><div class="footer-menu"><a href="">利用規約</a></div></li>
+        <li><div class="footer-menu"><a href="">会社概要</a></div></li>
+        <li><div class="footer-menu"><a href="">プライバシーポリシー</a></div></li>
+        <li><div class="footer-menu"><a href="">採用</a></div></li>
+      </ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
