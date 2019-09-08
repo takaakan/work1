@@ -527,7 +527,7 @@ p{
 }
 
 
-@media (min-width:780px){
+@media (min-width:1000px){
 
 .msr_flow02 li {
   background-color: rgba(38,208,192,0.6);
@@ -560,7 +560,7 @@ child-merit{
 }
 
 
-@media (min-width:1025px){
+@media (min-width:2800px){
 
 .msr_flow02 li {
   background-color: rgba(38,208,192,0.6);
